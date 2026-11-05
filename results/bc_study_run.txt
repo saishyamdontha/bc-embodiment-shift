@@ -1,1 +1,70 @@
-python3: can't open file '/home/meghashyam/bc-embodiment-shift/bc_study.py': [Errno 2] No such file or directory
+source demos: 50 episodes, 17872 steps, demonstrator success 1.00
+target demos: 50 episodes, 22495 steps, demonstrator success 0.68
+reference source_demonstrator on target robot: success 0.40, mean return 64.9
+reference target_demonstrator on target robot: success 0.66, mean return 173.6
+  source_only              m= 0 seed=0  success 0.40  return    64.5
+  target_only              m= 1 seed=0  success 0.42  return   121.8
+  mixed                    m= 1 seed=0  success 0.28  return    58.1
+  mixed_target_upweighted  m= 1 seed=0  success 0.26  return    48.1
+  target_only              m= 2 seed=0  success 0.64  return   167.3
+  mixed                    m= 2 seed=0  success 0.64  return   135.5
+  mixed_target_upweighted  m= 2 seed=0  success 0.50  return    95.1
+  target_only              m= 5 seed=0  success 0.70  return   179.7
+  mixed                    m= 5 seed=0  success 0.54  return   120.2
+  mixed_target_upweighted  m= 5 seed=0  success 0.62  return   130.0
+  target_only              m=10 seed=0  success 0.76  return   179.6
+  mixed                    m=10 seed=0  success 0.62  return   129.7
+  mixed_target_upweighted  m=10 seed=0  success 0.64  return   159.8
+  target_only              m=25 seed=0  success 0.62  return   154.8
+  mixed                    m=25 seed=0  success 0.68  return   185.2
+  mixed_target_upweighted  m=25 seed=0  success 0.64  return   167.2
+  target_only              m=50 seed=0  success 0.68  return   171.4
+  mixed                    m=50 seed=0  success 0.72  return   189.0
+  mixed_target_upweighted  m=50 seed=0  success 0.74  return   195.5
+  source_only              m= 0 seed=1  success 0.38  return    72.0
+  target_only              m= 1 seed=1  success 0.38  return   115.6
+  mixed                    m= 1 seed=1  success 0.38  return    90.9
+  mixed_target_upweighted  m= 1 seed=1  success 0.30  return    63.4
+  target_only              m= 2 seed=1  success 0.64  return   166.5
+  mixed                    m= 2 seed=1  success 0.60  return   154.6
+  mixed_target_upweighted  m= 2 seed=1  success 0.60  return   140.3
+  target_only              m= 5 seed=1  success 0.72  return   184.2
+  mixed                    m= 5 seed=1  success 0.70  return   160.0
+  mixed_target_upweighted  m= 5 seed=1  success 0.56  return   126.2
+  target_only              m=10 seed=1  success 0.72  return   180.4
+  mixed                    m=10 seed=1  success 0.66  return   154.1
+  mixed_target_upweighted  m=10 seed=1  success 0.64  return   138.8
+  target_only              m=25 seed=1  success 0.68  return   168.7
+  mixed                    m=25 seed=1  success 0.66  return   180.6
+  mixed_target_upweighted  m=25 seed=1  success 0.70  return   183.5
+  target_only              m=50 seed=1  success 0.68  return   170.4
+  mixed                    m=50 seed=1  success 0.70  return   177.8
+  mixed_target_upweighted  m=50 seed=1  success 0.70  return   189.2
+  source_only              m= 0 seed=2  success 0.28  return    35.5
+  target_only              m= 1 seed=2  success 0.46  return   135.4
+  mixed                    m= 1 seed=2  success 0.28  return    46.6
+  mixed_target_upweighted  m= 1 seed=2  success 0.28  return    57.2
+  target_only              m= 2 seed=2  success 0.54  return   142.4
+  mixed                    m= 2 seed=2  success 0.70  return   160.9
+  mixed_target_upweighted  m= 2 seed=2  success 0.42  return    96.1
+  target_only              m= 5 seed=2  success 0.66  return   169.7
+  mixed                    m= 5 seed=2  success 0.54  return   127.2
+  mixed_target_upweighted  m= 5 seed=2  success 0.62  return   145.1
+  target_only              m=10 seed=2  success 0.72  return   176.5
+  mixed                    m=10 seed=2  success 0.68  return   161.4
+  mixed_target_upweighted  m=10 seed=2  success 0.62  return   150.4
+  target_only              m=25 seed=2  success 0.64  return   161.3
+  mixed                    m=25 seed=2  success 0.74  return   189.6
+  mixed_target_upweighted  m=25 seed=2  success 0.66  return   175.6
+  target_only              m=50 seed=2  success 0.72  return   170.3
+  mixed                    m=50 seed=2  success 0.64  return   172.7
+  mixed_target_upweighted  m=50 seed=2  success 0.62  return   170.6
+
+=== success rate on the TARGET robot (mean over seeds, min-max) ===
+condition                            m=0           m=1           m=2           m=5          m=10          m=25          m=50
+source_only               0.35 (0.28-0.40)             -             -             -             -             -             -
+target_only                            -0.42 (0.38-0.46)0.61 (0.54-0.64)0.69 (0.66-0.72)0.73 (0.72-0.76)0.65 (0.62-0.68)0.69 (0.68-0.72)
+mixed                                  -0.31 (0.28-0.38)0.65 (0.60-0.70)0.59 (0.54-0.70)0.65 (0.62-0.68)0.69 (0.66-0.74)0.69 (0.64-0.72)
+mixed_target_upweighted                -0.28 (0.26-0.30)0.51 (0.42-0.60)0.60 (0.56-0.62)0.63 (0.62-0.64)0.67 (0.64-0.70)0.69 (0.62-0.74)
+
+wrote results/bc_runs.csv and results/bc_summary.csv
